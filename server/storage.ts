@@ -74,4 +74,7 @@ export class MemStorage implements IStorage {
 
   async getIdeas(): Promise<Idea[]> {
     return Array.from(this.ideasStorage.values());
-  }s
+  }
+}
+
+export const storage = new MemStorage();
